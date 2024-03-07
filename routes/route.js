@@ -5,9 +5,9 @@ import { getMenu } from "../controller/menu.controller.js";
 
 const route = express.Router();
 
-route.post('/user', addUser );
-route.post('/getuser',getUser)
-route.post('/contact', sendContact)
-route.get('/menu', getMenu )
+route.post('/api/user', addUser );
+route.post('/api/getuser',getUser)
+route.post('/api/contact', sendContact)
+route.get('/api/menu', getMenu )
 
 export default route;
