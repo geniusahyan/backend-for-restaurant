@@ -12,7 +12,8 @@ app.get('/', (req,res)=>{
     res.send("<h2>this is something</h2>");
 })
 
-app.use(cors())
+app.use(cors({credentials:true, origin:true}))
+
 app.use(bodyParser.json({exented:true}));
 app.use(bodyParser.urlencoded({extended:true}));
 
